@@ -2,7 +2,7 @@ import axios from "axios";
 
 // console.log(JSON.parse(JSON.parse(localStorage.getItem("persist:root")).user));
 
-const BASE_URL = "https://dawn-api.onrender.com/api/";
+const BASE_URL = `${process.env.REACT_APP_SERVER_URL}/api/`;
 let TOKEN = "";
 TOKEN =
   localStorage.getItem("persist:root") &&

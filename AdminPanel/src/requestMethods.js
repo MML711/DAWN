@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://dawn-api.onrender.com/api/";
+const BASE_URL = `${process.env.REACT_APP_SERVER_URL}/api/`;
 let TOKEN = "";
 TOKEN =
   localStorage.getItem("persist:root") &&
